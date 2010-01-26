@@ -42,7 +42,10 @@ void MainWindow::changeEvent(QEvent *e)
 }
 
 void MainWindow::aboutClicked() {
-    QMessageBox::information(this, "About PPCards", "Planning Poker cards for Maemo by Ville Ranki <ville.ranki@iki.fi>\nReleased under GNU GPLv3");
+    QMessageBox::information(this, "About PPCards", 
+	"Planning Poker cards for Maemo by Ville Ranki <ville.ranki@iki.fi>\n"
+	"Released under GNU GPLv3 at\n"
+	"http://github.com/vranki/PPCards");
 }
 
 void MainWindow::buttonClicked() {

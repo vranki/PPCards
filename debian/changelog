@@ -1,3 +1,9 @@
+ppcards (1.1-1) unstable; urgency=low
+
+  * Added github link to about dialog.
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Tue, 26 Jan 2010 16:21:48 +0300
+
 ppcards (1.0-1) unstable; urgency=low
 
   * Enhanced description, added icon and some minor changes.
