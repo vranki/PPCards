@@ -1,0 +1,18 @@
+ppcards (1.0-1) unstable; urgency=low
+
+  * Enhanced description, added icon and some minor changes.
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Fri, 25 Dec 2009 16:21:48 +0300
+
+ppcards (0.9-1) unstable; urgency=low
+
+  * Minor tuning, uploading to Maemo-extras-dev
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Tue, 24 Nov 2009 16:21:48 +0300
+
+ppcards (0.5-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Mon, 23 Nov 2009 16:21:48 +0300
+

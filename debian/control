@@ -1,0 +1,72 @@
+Source: ppcards
+Section: user/office
+Priority: optional
+Maintainer: Ville Ranki <ville.ranki@iki.fi>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.3
+
+Package: ppcards
+XB-Maemo-Display-Name: Planning Poker cards
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Virtual Planning Poker cards for Maemo
+ Planning Poker is a time estimation method used widely in
+ Scrum software development process. This application provides
+ virtual cards for playing planning poker.
+XB-Maemo-Icon-26:
+ iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAAXNSR0IArs4c
+ 6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMGQ0TFRXuJHkAAAkA
+ SURBVFjDzRlrSFPve+fs7JzjLm7zsulSSW1ml5GWVKAZQfSlKJBMv0gGBRVo
+ QSBIBEEQikT0VUi/lJpoEYkFCWnmpsxU8NIsl3Pzku3idnY552w75/w+vPzP
+ b82pmz9+/H/Pp73PeZ/3fe7v8zyDOI4T/JcAFvzH4F9kaHe6/4Mh6H+wDSYe
+ YFmWJEkIgnbBExxTrEgONmN2BCADy7KAiouA3ZhsM1miggI+aJoGy3A4TFEU
+ wO94FPIvORDLsrwwIpEIQZBwOCwUCmEY/v84NcuyDMPwWoEgCEEQkiR31De8
+ lcJjYrY/i/cSmqadTqdEIokkhyAIhuFgMLi94eCYd0cSAIzZbN7etYEaIAgi
+ CMLlcmk0GhiGI8/hOA7HcYqieGffTixeOO5PAJjR0dHKysqpqSmO41iW5TYB
+ QAaDwdXVVZfLBZYxd1IURdM0tzXE5UOFhYVHjhxpb28nCCJm9EEQ9OvXL4Ig
+ 0tLSlEol7zebN5Mk6fP54vWhrQJeLpdXVFQ4nc6WlpbI1CIQCIBW5ufnVSpV
+ amqqSCSKmbcYhgmFQktLS3NzczKZTLCjJ8YDzc3N+fn5nZ2dPCYYDC4sLPAm
+ iLIRv1xfX5+dnR0bGzOZTDF3/uEk8bAC6EmSPH/+/LVr1+bm5gDearWGQqGY
+ rACM2+0eGBiYm5tzOBxRn/4RQ/yVa2trRUVFr1+/XllZ4ThOr9fHFBdgjEbj
+ wMAATdMMw8RvhwRMBq55+fIljuPNzc0Mw8zPz8/MzGwWmmXZqampr1+/bm+d
+ f8oQOD0YDF66dCk5Ofnbt28cx5lMJpvNxt8KfgQCge7uboqiuMQhYYY4jvv8
+ +XNGRkZ1dfU2O1dXVyN1E7+e4ipZoiLZ4/FUVVWNjIzcuHEjKysLhmGSJMGT
+ npSUBDwGQRAIghQKRW5ubnl5uVQq5bP5DpVCnKUFwzCjo6ODg4MSiSQ9PR3H
+ 8fr6eq1WOzg4uD3h7Ozs+Pi43W4vKSkpKytDEGR7tuJiiGGYT58+URRVWlqq
+ VCrdbvfa2tqtW7empqYaGxtzcnICgQBN016vVywWA8Xk5OQIhUIcx6VSaUpK
+ ysrKSmlp6Z07dx4/fry9quJiiKbp7u7usrIyh8Oh1+uHh4eXl5fNZrPH48nI
+ yMBxPBwO4zi+vr7u9/tDoRDLsgqFAsMwiUSCoiiGYRRFWa1WmqZv377d1NQE
+ CoGYbMVVoIlEouTkZLvdfuzYMa1We+jQoc7OzlAoJBQKLRaLx+NJS0tLTU3d
+ v3//0aNHMQwjCGJycnJoaMhut7MsW1RUVFdX9+XLF6/Xi2HYmTNn6urqampq
+ Yj558fpQIBDo7e29cOGCUqnkkTMzM0NDQz9+/LDZbCaTKRAIhEIhvjIsLCxU
+ KpXV1dUVFRUCgUCj0TQ0NNy9e5ckyUePHun1+ufPn+fn5+/mLQNB6/f7Ozo6
+ 4gxjiqKiEnRhYWFubu7w8DBY2my2lpaWcDgcRSh8+PBhPEU7x3EoiqpUKoPB
+ AMSK6kyiNA/Cnl/6/X61Wn3y5Mm2tjahUHjw4EEURU0m04EDB1AU3U1NDXhS
+ q9UkSfr9/mjD75RdVldXz507d/369a6ursnJSYPBEAgE5ufnQX7aZZEPbj17
+ 9qzBYEi0N6IoCkSW1+udnZ3V6XT9/f2FhYWbz0ms6+A4TigUgkSQUOsIwzAo
+ sZ8+farT6cRicWdnZ2VlZQztJvr4sSxrMpksFktCVEajMRgMvnr16sSJEx6P
+ p7W19cWLFzGDQ7CLB9lisZjN5oRIFhYWmpqaFApFf38/QRD19fVbRetuGPL5
+ fBMTE8FgMH4St9tdXFw8NjbGcdzVq1eXl5e32plwK81xnEQi2djYCIfDIpEo
+ TiocxycmJgQCQU9PT0FBgVqt3uo522UrLRaLo/rA7WXAMEwgEGxsbHR1dVVV
+ VUVlqbicevtq3Gg0EgSRaGVXW1vLZ+rETAb0yTBMe3v7u3fvYBgOh8MgU8Mw
+ jCCIQqFIT0/focP6M4d1dHTIZLKysjKQVwGgKBo1D4FiNocQBHk8nr6+vuTk
+ 5NLS0pSUlKg9drt9eHi4oqJixyIQbCAIQqfTNTQ0KJVKhmEgCBKJRH6//9Sp
+ U1qtdsvygy9VvV6v0WgsLy/Pzs7mv87NzY2Pj0ulUolEkp+f393dXVFRsXNJ
+ CkECgaC9vV0mk+l0OqlUqtVqcRz3+/0Oh8NgMOTk5KAo+vc5m6348+dPo9EY
+ 1QH29fUNDQ0RBOHz+QKBAHCIrKysmzdvfvjwARQeNE37fD6Kotxut81ms9vt
+ a2tri4uLb9++zcrKArGGYVhycjLfara2tlqt1siLIL5LB05js9lQFNVoNEDV
+ LMtardaenp6amhq1Wh1pBZvNVldXNzo6KpfLMzMzWZb1+XxCodDlcoGJp1qt
+ FovFOTk5e/fuzcvLO3z48J49exAEyczMfPLkyb1798BpjY2N9+/f57sAAc/d
+ 79+/rVar0+mM1JbJZGpvb4+ZVX0+n8ViSSg9bhXFfCvMcZwAYCcnJ589ewbG
+ BpEXO53OwcFBo9Ho9/tjDhIil4k2qZHV3Pv37xcXF/82WVtb28WLF9PT0zdH
+ TSgUAmV1oskTeBXoQ4DbcRzn9XodDkcwGPz+/btAIDh+/Hh2djaGYUajsbe3
+ 98GDBxDHcR8/fgyFQqdPn+bnlYAtl8tlNptBEQ38CYZhkUhEEITFYnG73dPT
+ 03q93uFwZGdnq1QqBEG8Xi8oq1EUVSqVKIpSFIVhGIqiYEREkiTDMCUlJSsr
+ K1euXCFJcnp6emNjIy0trba2NjMzEwJTFYPB4Pf7gRqcTicEQYuLi2/evLFa
+ rYBLDMPA3FkoFCYlJeE4LpPJ9u3bl5ubW1xcnJWVhWGYTCZzOBwej0ckEoVC
+ IRiGgQw4jovFYpZlw+EwyHBLS0sFBQWXL1+OkbT4ESTDMOAIcOvS0pLT6RwZ
+ GRkdHVUoFCzLms3mYDCYl5eXn5+vUqlkMplGo5HL5WCogCAIhmFyuVwikSAI
+ AvIvx3E0TZMkGQgEgOJB96hUKuVyecykCgEOtspv4XAY+BDvszAMgy4HjJ4T
+ /RtkcxKPQv4FVPifVDXANZUAAAAASUVORK5CYII=
+ ====
+
