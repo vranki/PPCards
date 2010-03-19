@@ -7,6 +7,7 @@ Standards-Version: 3.7.3
 
 Package: ppcards
 XB-Maemo-Display-Name: Planning Poker cards
+XSBC-Bugtracker: mailto:ville.ranki@iki.fi
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Virtual Planning Poker cards for Maemo

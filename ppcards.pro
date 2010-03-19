@@ -17,3 +17,4 @@ icons.path = /usr/share/pixmaps
 INSTALLS += target desktop icons
 target.path = /usr/bin
 
+OTHER_FILES += debian/control debian/rules debian/changelog

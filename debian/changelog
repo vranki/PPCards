@@ -1,3 +1,8 @@
+ppcards (1.2-1) unstable; urgency=low
+
+  * Added required bugtracker link.
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Fri, 19 Mar 2010 16:21:48 +0300
 ppcards (1.1-1) unstable; urgency=low
 
   * Added github link to about dialog.
