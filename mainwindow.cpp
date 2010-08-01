@@ -21,7 +21,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButtonCoffee, SIGNAL(clicked()), this, SLOT(buttonClicked()));
     connect(ui->pushButtonInf, SIGNAL(clicked()), this, SLOT(buttonClicked()));
     connect(ui->pushButtonAbout, SIGNAL(clicked()), this, SLOT(aboutClicked()));
-
+#ifdef Q_WS_MAEMO_5 // Set portrait mode on Maemo
+    setAttribute(Qt::WA_Maemo5PortraitOrientation, true);
+#endif
 }
 
 MainWindow::~MainWindow()

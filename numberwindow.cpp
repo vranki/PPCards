@@ -1,13 +1,15 @@
 #include "numberwindow.h"
 
-NumberWindow::NumberWindow(QWidget *parent) : QMainWindow(parent)
+// Without Qt::Dialog the main window wouldn't be maximized back after this window is closed.
+NumberWindow::NumberWindow(QWidget *parent) : QMainWindow(parent, Qt::Dialog)
 {
     view = new QGraphicsView(&scene);
-    // view->setLayout(new QVBoxLayout(this));
     setCentralWidget(view);
     view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+#ifndef Q_WS_MAEMO_5 // Rotation not needed in Maemo
     view->rotate(-90);
+#endif
 }
 
 void NumberWindow::mousePressEvent(QMouseEvent * me) {
