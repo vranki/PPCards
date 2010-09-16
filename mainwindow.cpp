@@ -1,9 +1,11 @@
+#include <QSettings>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    settings(QSettings::UserScope, "PPCards", "PPCards")
 {
     ui->setupUi(this);
     connect(ui->pushButton0, SIGNAL(clicked()), this, SLOT(buttonClicked()));
@@ -24,6 +26,21 @@ MainWindow::MainWindow(QWidget *parent) :
 #ifdef Q_WS_MAEMO_5 // Set portrait mode on Maemo
     setAttribute(Qt::WA_Maemo5PortraitOrientation, true);
 #endif
+    setButtonFromSettings(ui->pushButton0);
+    setButtonFromSettings(ui->pushButtonHalf);
+    setButtonFromSettings(ui->pushButton1);
+    setButtonFromSettings(ui->pushButton2);
+    setButtonFromSettings(ui->pushButton3);
+    setButtonFromSettings(ui->pushButton5);
+    setButtonFromSettings(ui->pushButton8);
+    setButtonFromSettings(ui->pushButton13);
+    setButtonFromSettings(ui->pushButton20);
+    setButtonFromSettings(ui->pushButton40);
+    setButtonFromSettings(ui->pushButton100);
+    setButtonFromSettings(ui->pushButtonUnknown);
+    setButtonFromSettings(ui->pushButtonCoffee);
+    setButtonFromSettings(ui->pushButtonInf);
+    setButtonFromSettings(ui->pushButtonAbout);
 }
 
 MainWindow::~MainWindow()
@@ -54,4 +71,9 @@ void MainWindow::buttonClicked() {
     QPushButton *button = static_cast<QPushButton*> (sender());
     card = new NumberWindow(this);
     card->showCard(button->text());
+}
+
+void MainWindow::setButtonFromSettings(QPushButton *button)
+{
+    button->setText(settings.value("MainWindow/" + button->objectName(), button->text()).toString());
 }
