@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSettings>
 #include "numberwindow.h"
 #include <QMessageBox>
 
@@ -20,10 +21,12 @@ public slots:
 
 protected:
     void changeEvent(QEvent *e);
+    void setButtonFromSettings(QPushButton *button);
 
 private:
     Ui::MainWindow *ui;
     NumberWindow *card;
+    QSettings settings;
 };
 
 #endif // MAINWINDOW_H
