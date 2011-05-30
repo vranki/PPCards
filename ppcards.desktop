@@ -3,11 +3,10 @@ Version=1.0
 Encoding=UTF-8
 Name=Planning Poker
 Comment=Planning Poker cards
-Exec=ppcards
 Type=Application
 StartupNotify=false
 Categories=Utility
-Icon=ppcards_icon_48
+Icon=ppcards_icon_64
+Exec=/opt/org.vranki.ppcards/ppcards
 X-Osso-HildonDesk-ShowInToolbar=true
 X-Osso-Type=application/x-executable
-
