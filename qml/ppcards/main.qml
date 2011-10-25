@@ -13,7 +13,13 @@ Rectangle {
     }
 
     function cardClicked(text) {
+        imageCardClicked(text, "")
+    }
+
+    function imageCardClicked(text, image) {
+        console.debug("clicked " + text + " image " + image)
         displayedCard.text = text
+        displayedCard.image = image
         displayedCard.cardDisplayed = true
     }
 
@@ -38,5 +44,7 @@ Rectangle {
         CardButton { text: "?"; onClicked: cardClicked(text) }
         CardButton { text: "∞"; onClicked: cardClicked(text) }
         CardButton { text: "Quit"; onClicked: Qt.quit(); }
+        CardButton { text: ""
+            image: "coffee.png"; onClicked: imageCardClicked(text, image); }
     }
 }

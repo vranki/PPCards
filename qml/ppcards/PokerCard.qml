@@ -4,6 +4,7 @@ Rectangle {
     id: container
     anchors.centerIn: parent
     property alias text: cardText.text
+    property alias image: cardImage.source
     property bool cardDisplayed: false
     border.color: "black"
     color: "white"
@@ -22,7 +23,13 @@ Rectangle {
         anchors.centerIn: parent
         font.pixelSize: parent.height * 0.4;
     }
-
+    Image {
+        id: cardImage
+        width: parent.width*0.9
+        anchors.centerIn: parent
+        fillMode: Image.PreserveAspectFit
+        z: 1
+    }
     states: [State {
         name: "show"; when: container.cardDisplayed == true
         PropertyChanges { target: container; scale: 1; opacity: 1}

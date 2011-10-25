@@ -1,17 +1,14 @@
-This package was debianized by Ville Ranki <vranki@unknown> on
-Mon, 10 Oct 2011 16:43:38 +0300.
+This package was debianized by:
 
-It was downloaded from <url://example.com>
+    Ville Ranki <ville.ranki@iki.fi> on Thu, 24 Sep 2009 20:29:43 +0300
 
 Upstream Author(s):
 
-    <put author's name and email here>
-    <likewise for another author>
+        Ville Ranki <ville.ranki@iki.fi>
 
 Copyright:
 
-    <Copyright (C) YYYY Name OfAuthor>
-    <likewise for another author>
+    Copyright (C) 2011 Ville Ranki
 
 License:
 
@@ -32,9 +29,8 @@ License:
 On Debian systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
 
-The Debian packaging is (C) 2011, Ville Ranki <vranki@unknown> and
-is licensed under the GPL, see above.
+The Debian packaging is:
 
+    Copyright C) 2011, Ville Ranki <ville.ranki@iki.fi>
 
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
+and is licensed under the GPL, see above.
