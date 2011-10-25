@@ -1,12 +1,10 @@
-Virtual Planning Poker cards for Maemo
+Virtual Planning Poker cards for MeeGo & Maemo
 
 Planning Poker is a time estimation method used widely in
 Scrum software development process. This application provides
 virtual cards for playing planning poker.
 
-This git branch (qwidget) contains the QWidget based version of
-PPCards. It is not maintained as development in master branch
-uses QML.
+See qwidget branch for QWidget based version of this.
 
  -- Ville Ranki <ville.ranki@iki.fi>
 
