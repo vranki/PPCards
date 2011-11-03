@@ -7,16 +7,21 @@ Rectangle {
     property alias image: cardImage.source
     property bool cardDisplayed: false
     border.color: "black"
-    color: "white"
+//    color: "white"
     z: 100
-    width: parent.width
-    height: parent.height
+    height: parent.width
+    width: parent.height
     scale: 0.5
     opacity: 0.4
     smooth: true
     radius: 20
     visible: true
-
+    gradient: Gradient {
+        GradientStop { position: 0.0; color: "#EEEEEE" }
+        GradientStop { position: 0.2; color: "#FFFFFF" }
+        GradientStop { position: 0.8; color: "#FFFFFF" }
+        GradientStop { position: 0.0; color: "#EEEEEE" }
+    }
     Text {
         id: cardText
         text: parent.text

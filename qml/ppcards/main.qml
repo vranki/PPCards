@@ -4,6 +4,7 @@ Rectangle {
     width: 360
     height: 360
     color: "black"
+    rotation: -90
 
     PokerCard {
         id: displayedCard
@@ -28,8 +29,9 @@ Rectangle {
         id: colorPicker
         columns: 3
         rows: 5
-        spacing: 3
+        spacing: 1
 
+        CardButton { text: "Quit"; onClicked: Qt.quit(); }
         CardButton { text: "0"; onClicked: cardClicked(text) }
         CardButton { text: "½"; onClicked: cardClicked(text) }
         CardButton { text: "1"; onClicked: cardClicked(text) }
@@ -43,7 +45,6 @@ Rectangle {
         CardButton { text: "100"; onClicked: cardClicked(text) }
         CardButton { text: "?"; onClicked: cardClicked(text) }
         CardButton { text: "∞"; onClicked: cardClicked(text) }
-        CardButton { text: "Quit"; onClicked: Qt.quit(); }
         CardButton { text: ""
             image: "coffee.png"; onClicked: imageCardClicked(text, image); }
     }
