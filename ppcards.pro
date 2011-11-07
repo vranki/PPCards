@@ -1,4 +1,6 @@
 # Add more folders to ship with the application, here
+TARGET = ppcards
+
 folder_01.source = qml/ppcards
 folder_01.target = qml
 DEPLOYMENTFOLDERS = folder_01
@@ -24,7 +26,7 @@ symbian:TARGET.CAPABILITY += NetworkServices
 # MOBILITY +=
 
 # Speed up launching on MeeGo/Harmattan when using applauncherd daemon
-CONFIG += qdeclarative-boostable
+#CONFIG += qdeclarative-boostable
 
 # Add dependency to Symbian components
 # CONFIG += qt-components
@@ -44,3 +46,10 @@ OTHER_FILES += \
     qtc_packaging/debian_harmattan/control \
     qtc_packaging/debian_harmattan/compat \
     qtc_packaging/debian_harmattan/changelog
+
+target.path = /usr/bin
+qml.path = /usr/share/ppcards/qml
+qml.files += qml/ppcards/*.qml
+
+INSTALLS += target qml
+
