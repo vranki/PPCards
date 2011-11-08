@@ -49,7 +49,16 @@ OTHER_FILES += \
 
 target.path = /usr/bin
 qml.path = /usr/share/ppcards/qml
-qml.files += qml/ppcards/*.qml
+qml.files += qml/ppcards/*
 
-INSTALLS += target qml
+contains(MEEGO_EDITION,harmattan) {
+    icon.files = ppcards.svg
+    icon.path = /usr/share/icons/hicolor/scalable/apps
+    INSTALLS += icon
+}
+desktop.files = ppcards.desktop
+desktop.path = /usr/share/applications
+
+INSTALLS += target qml desktop
+
 
