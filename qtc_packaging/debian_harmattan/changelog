@@ -1,4 +1,9 @@
-ppcards (2.0-1) unstable; urgency=low
+ppcards (2.0.1) unstable; urgency=low
+
+  * Enhancements
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Wed, 09 Nov 2010 16:21:48 +0300
+ ppcards (2.0-1) unstable; urgency=low
 
    * Full rewrite in QML
 
