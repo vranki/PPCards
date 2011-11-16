@@ -10,7 +10,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     if(QFile("qml/ppcards/main.qml").exists()) {
         viewer->setMainQmlFile(QLatin1String("qml/ppcards/main.qml"));
     } else {
-        viewer->setMainQmlFile(QLatin1String("/usr/share/ppcards/qml/main.qml"));
+        viewer->setMainQmlFile(QLatin1String("/opt/ppcards/qml/ppcards/main.qml"));
     }
     viewer->showFullScreen();
 

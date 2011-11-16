@@ -1,8 +1,7 @@
 import QtQuick 1.1
 import com.nokia.meego 1.0
+import "Settings.js" as Storage
 
-import QtQuick 1.1
-import com.nokia.meego 1.0
 PageStackWindow {
     id: appWindow
     initialPage: mainPage
@@ -15,21 +14,25 @@ PageStackWindow {
         ToolIcon {
             platformIconId: "toolbar-view-menu"
             anchors.right: (parent === undefined) ? undefined : parent.right
-            onClicked: (myMenu.status == DialogStatus.Closed) ? myMenu.open() : myMenu.close()
+            onClicked: (mainMenu.status == DialogStatus.Closed) ? mainMenu.open() : mainMenu.close()
         }
     }
     Menu {
-        id: myMenu
+        id: mainMenu
         visualParent: pageStack
         MenuLayout {
             MenuItem { text: qsTr("Quit"); onClicked: Qt.quit() }
             MenuItem { text: qsTr("About"); onClicked: aboutDialog.open() }
-//            CheckBox { text: qsTr("Shake to reveal"); }
+            CheckBox { id: shakeSetting; text: qsTr("Shake to reveal"); onClicked: {
+                    Storage.setSetting("shake_to_reveal", shakeSetting.checked ? "true" : "false");
+                }}
         }
     }
     AboutDialog {
         id: aboutDialog
-//        visible: false
-        z: 1000
+    }
+    Component.onCompleted: {
+        Storage.initialize();
+        shakeSetting.checked = Storage.getSetting("shake_to_reveal")=="true";
     }
 }

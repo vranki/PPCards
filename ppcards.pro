@@ -46,11 +46,12 @@ OTHER_FILES += \
     qtc_packaging/debian_harmattan/control \
     qtc_packaging/debian_harmattan/compat \
     qtc_packaging/debian_harmattan/changelog \
-debian/changelog
+debian/changelog\
+debian/control
 
 target.path = /usr/bin
-qml.path = /usr/share/ppcards/qml
-qml.files += qml/ppcards/*
+#qml.path = /usr/share/ppcards/qml
+#qml.files += qml/ppcards/*
 
 contains(MEEGO_EDITION,harmattan) {
     icon.files = ppcards.svg
@@ -60,6 +61,4 @@ contains(MEEGO_EDITION,harmattan) {
 desktop.files = ppcards.desktop
 desktop.path = /usr/share/applications
 
-INSTALLS += target qml desktop
-
-
+INSTALLS += target desktop
