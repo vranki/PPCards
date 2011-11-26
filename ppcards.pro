@@ -46,7 +46,8 @@ OTHER_FILES += \
     qtc_packaging/debian_harmattan/control \
     qtc_packaging/debian_harmattan/compat \
     qtc_packaging/debian_harmattan/changelog \
-debian/changelog
+debian/changelog \
+debian/control
 
 target.path = /usr/bin
 qml.path = /usr/share/ppcards/qml
