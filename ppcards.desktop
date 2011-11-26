@@ -2,12 +2,7 @@
 Version=1.0
 Encoding=UTF-8
 Name=Planning Poker
-Comment=Planning Poker cards
-Exec=ppcards
 Type=Application
-StartupNotify=false
-Categories=Utility
-Icon=ppcards_icon_48
-X-Osso-HildonDesk-ShowInToolbar=true
+Icon=/usr/share/icons/hicolor/scalable/apps/ppcards.svg
+Exec=/usr/bin/ppcards
 X-Osso-Type=application/x-executable
-

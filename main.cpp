@@ -1,10 +1,18 @@
 #include <QtGui/QApplication>
-#include "mainwindow.h"
+#include <QFile>
+#include "qmlapplicationviewer.h"
 
-int main(int argc, char *argv[])
+Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
+    QScopedPointer<QApplication> app(createApplication(argc, argv));
+    QScopedPointer<QmlApplicationViewer> viewer(QmlApplicationViewer::create());
+    viewer->setOrientation(QmlApplicationViewer::ScreenOrientationAuto);
+    if(QFile("qml/ppcards/main.qml").exists()) {
+        viewer->setMainQmlFile(QLatin1String("qml/ppcards/main.qml"));
+    } else {
+        viewer->setMainQmlFile(QLatin1String("/usr/share/ppcards/qml/main.qml"));
+    }
+    viewer->showFullScreen();
+
+    return app->exec();
 }

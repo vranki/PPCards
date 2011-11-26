@@ -4,11 +4,11 @@ This package was debianized by:
 
 Upstream Author(s):
 
-	Ville Ranki <ville.ranki@iki.fi>
+        Ville Ranki <ville.ranki@iki.fi>
 
 Copyright:
 
-    Copyright (C) 2009 Ville Ranki
+    Copyright (C) 2011 Ville Ranki
 
 License:
 
@@ -31,6 +31,6 @@ Public License can be found in `/usr/share/common-licenses/GPL'.
 
 The Debian packaging is:
 
-    Copyright C) 2009, Ville Ranki <ville.ranki@iki.fi>
+    Copyright C) 2011, Ville Ranki <ville.ranki@iki.fi>
 
 and is licensed under the GPL, see above.

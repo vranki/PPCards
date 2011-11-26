@@ -3,18 +3,12 @@ ppcards (2.0.1) unstable; urgency=low
   * Enhancements
 
  -- Ville Ranki <ville.ranki@iki.fi>  Wed, 09 Nov 2010 16:21:48 +0300
-ppcards (2.0-1) unstable; urgency=low
+ ppcards (2.0-1) unstable; urgency=low
 
-  * Full rewrite in QML
+   * Full rewrite in QML
 
  -- Ville Ranki <ville.ranki@iki.fi>  Sun, 01 Aug 2010 16:21:48 +0300
-ppcards (1.4-1) unstable; urgency=low
 
-  * Buttons are now larger.
-  * Buttons can be configured with .ini file. Editor coming later.
-  * New artwork.
-
- -- Ville Ranki <ville.ranki@iki.fi>  Fri, 17 Sep 2010 16:21:48 +0300
 ppcards (1.3-1) unstable; urgency=low
 
    * Switched to portrait mode by default.
