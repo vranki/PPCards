@@ -21,7 +21,6 @@ PageStackWindow {
         id: mainMenu
         visualParent: pageStack
         MenuLayout {
-            MenuItem { text: qsTr("Quit"); onClicked: Qt.quit() }
             MenuItem { text: qsTr("About"); onClicked: aboutDialog.open() }
             CheckBox { id: shakeSetting; text: qsTr("Shake to reveal"); onClicked: {
                     Storage.setSetting("shake_to_reveal", shakeSetting.checked ? "true" : "false");

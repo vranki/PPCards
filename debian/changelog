@@ -1,15 +1,19 @@
- ppcards (2.0.1) unstable; urgency=low
+ppcards (2.1.0) unstable; urgency=low
+
+  * Shake to reveal (was not in first OVI release)
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Tue, 13 Dec 2011 16:21:48 +0300
+ppcards (2.0.1) unstable; urgency=low
 
   * Enhancements
 
- -- Ville Ranki <ville.ranki@iki.fi>  Wed, 09 Nov 2010 16:21:48 +0300
- ppcards (2.0-1) unstable; urgency=low
+ -- Ville Ranki <ville.ranki@iki.fi>  Wed, 09 Nov 2011 16:21:48 +0300
+ppcards (2.0-1) unstable; urgency=low
 
   * Full rewrite in QML
 
- -- Ville Ranki <ville.ranki@iki.fi>  Sun, 01 Aug 2010 16:21:48 +0300
- ppcards (1.4-1) unstable; urgency=low
-
+ -- Ville Ranki <ville.ranki@iki.fi>  Sun, 01 Aug 2011 16:21:48 +0300
+ppcards (1.4-1) unstable; urgency=low
   * Buttons are now larger.
   * Buttons can be configured with .ini file. Editor coming later.
   * New artwork.
