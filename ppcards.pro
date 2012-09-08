@@ -1,6 +1,15 @@
 # Add more folders to ship with the application, here
 TARGET = ppcards
 
+#isEmpty(PREFIX) {
+# PREFIX = /usr/local
+#}
+#contains(MEEGO_EDITION,harmattan) {
+# PREFIX = /opt/ppcards
+#}
+
+#message("Prefix is: $$PREFIX")
+
 folder_01.source = qml/ppcards
 folder_01.target = qml
 DEPLOYMENTFOLDERS = folder_01
@@ -49,14 +58,18 @@ OTHER_FILES += \
     debian/changelog\
     debian/control
 
-target.path = /usr/bin
+target.path = /opt/ppcards/bin
 
 contains(MEEGO_EDITION,harmattan) {
     icon.files = ppcards.svg
     icon.path = /usr/share/icons/hicolor/scalable/apps
     INSTALLS += icon
 }
+
+icons.files = ppcards_icon_64.png
+icons.path = /usr/share/icons/hicolor/64x64/apps/ppcards_icon_64.png
+
 desktop.files = ppcards.desktop
 desktop.path = /usr/share/applications
 
-INSTALLS += target desktop
+INSTALLS += target desktop icons
