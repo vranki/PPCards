@@ -18,12 +18,12 @@ Virtual planning poker cards
 %build
 pwd
 ls -lh
-qmake PREFIX=/usr
-make
+%qmake
+make %{?jobs:-j%jobs}
 
 %install
 %{__rm} -rf %{buildroot}
-make INSTALL_ROOT=%{buildroot} install
+%make_install
 
 %files
 %defattr(-,root,root,-)
