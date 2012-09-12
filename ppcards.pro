@@ -49,7 +49,11 @@ OTHER_FILES += \
     qtc_packaging/debian_harmattan/compat \
     qtc_packaging/debian_harmattan/changelog \
     debian/changelog\
-    debian/control
+    debian/control \
+    debian/compat \
+    rpm/ppcards.spec \
+    rpm/ppcards.changes \
+    rpm/prepare_sources.sh
 
 target.path = /opt/ppcards/bin
 

@@ -1,3 +1,10 @@
+ppcards (2.1.1) unstable; urgency=low
+
+  * QML's stored now in resources
+  * RPM packaging for MeeGo
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Wed, 12 Sep 2012 16:21:48 +0300
+
 ppcards (2.1.0) unstable; urgency=low
 
   * Shake to reveal (was not in first OVI release)

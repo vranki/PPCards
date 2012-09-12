@@ -1,5 +1,5 @@
 Name: ppcards
-Version: 2.0.1
+Version: 2.1.1
 Release: 1
 Summary: Virtual planning poker cards
 License: GPL
@@ -28,8 +28,6 @@ make %{?jobs:-j%jobs}
 %files
 %defattr(-,root,root,-)
 /opt/%{name}/bin/%{name}
-/opt/%{name}/qml/ppcards/*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/64x64/apps/ppcards_icon_64.png
-
 
