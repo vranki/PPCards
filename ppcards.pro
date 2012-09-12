@@ -1,18 +1,9 @@
 # Add more folders to ship with the application, here
 TARGET = ppcards
 
-#isEmpty(PREFIX) {
-# PREFIX = /usr/local
-#}
-#contains(MEEGO_EDITION,harmattan) {
-# PREFIX = /opt/ppcards
-#}
-
-#message("Prefix is: $$PREFIX")
-
-folder_01.source = qml/ppcards
-folder_01.target = qml
-DEPLOYMENTFOLDERS = folder_01
+#folder_01.source = qml/ppcards
+#folder_01.target = qml
+#DEPLOYMENTFOLDERS = folder_01
 
 # Additional import path used to resolve QML modules in Creator's code model
 QML_IMPORT_PATH =
@@ -42,6 +33,8 @@ MOBILITY += sensors feedback
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp
+
+RESOURCES += ppcards.qrc
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)

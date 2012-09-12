@@ -1,5 +1,12 @@
 <RCC>
-  <qresource prefix="/" >
-    <file>coffee.png</file>
-  </qresource>
+    <qresource prefix="/">
+        <file>coffee.png</file>
+        <file>qml/ppcards/AboutDialog.qml</file>
+        <file>qml/ppcards/CardButton.qml</file>
+        <file>qml/ppcards/coffee.png</file>
+        <file>qml/ppcards/main.qml</file>
+        <file>qml/ppcards/MainPage.qml</file>
+        <file>qml/ppcards/PokerCard.qml</file>
+        <file>qml/ppcards/Settings.js</file>
+    </qresource>
 </RCC>
