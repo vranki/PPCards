@@ -4,5 +4,6 @@ Encoding=UTF-8
 Name=Planning Poker
 Type=Application
 Icon=/usr/share/icons/hicolor/scalable/apps/ppcards.svg
-Exec=/usr/bin/ppcards
+Exec=/opt/ppcards/bin/ppcards
 X-Osso-Type=application/x-executable
+

@@ -57,14 +57,8 @@ OTHER_FILES += \
 
 target.path = /opt/ppcards/bin
 
-contains(MEEGO_EDITION,harmattan) {
-    icon.files = ppcards.svg
-    icon.path = /usr/share/icons/hicolor/scalable/apps
-    INSTALLS += icon
-}
-
-icons.files = ppcards_icon_64.png
-icons.path = /usr/share/icons/hicolor/64x64/apps/ppcards_icon_64.png
+icons.files = ppcards.svg
+icons.path = /usr/share/icons/hicolor/scalable/apps
 
 desktop.files = ppcards.desktop
 desktop.path = /usr/share/applications

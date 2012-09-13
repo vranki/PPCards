@@ -6,7 +6,7 @@ License: GPL
 Group: Applications/Productivity
 Url: https://github.com/vranki/PPCards
 Source: %{name}-%{version}.tar.gz
-Requires: qt-components
+Requires: qt-components libdeclarative-feedback
 BuildRequires: qt-devel
 
 %description
@@ -16,8 +16,6 @@ Virtual planning poker cards
 %setup -q
 
 %build
-pwd
-ls -lh
 %qmake
 make %{?jobs:-j%jobs}
 
@@ -29,5 +27,5 @@ make %{?jobs:-j%jobs}
 %defattr(-,root,root,-)
 /opt/%{name}/bin/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/icons/hicolor/64x64/apps/ppcards_icon_64.png
+%{_datadir}/icons/hicolor/scalable/apps/ppcards.svg
 
